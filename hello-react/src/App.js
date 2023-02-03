@@ -1,22 +1,41 @@
 import './App.css';
 
+import User from "./components/User";
 // import Header from "./components/Header"
 // Component isminin buyuk harfle baslamasina dikkat edilmelidir.
 
-const name = "Eray";
-const surname ="Aybek";
-const isLoggedIn = true;
+
+const friends = [
+  {
+    id: 1,
+    name: "Ahmet",
+  },
+  {
+    id: 2,
+    name: "Tayfun",
+  },
+  {
+    id: 3,
+    name: "Gökhan",
+  }
+]
 
 function App() {
   return ( 
     <> 
     {/* React.Fragment */}
-
-
-      <h1>{name} {surname}</h1>
-      <h1>
-        {isLoggedIn ? `Benim adım ${name}, soyadım ${surname}` : "Giriş Yapmadınız."}
-      </h1>
+      
+      <User 
+      name= "Eray" 
+      surname="Aybek" 
+      isLoggedIn={true} 
+      age={23} 
+      friends={friends}
+      address={{
+        title: 'Ataşehir/Istanbul',
+        zip:34475
+      }}
+      />
       
       {/* <Header /> */}
 
