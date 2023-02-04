@@ -12,7 +12,7 @@ root.render(
 
     {/* <App /> */}
     {/* <Counter /> */}
-    <InputExample/>
+    {/* <InputExample/> */}
     
   </React.StrictMode>
 );
